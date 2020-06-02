@@ -1,0 +1,245 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Dev board"
+Date "2020-06-02"
+Rev "1.0.0"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L IoT_Home:E73-2G4M08S1C U1
+U 1 1 5E514202
+P 5300 3800
+F 0 "U1" H 5500 2450 50  0000 C CNN
+F 1 "E73-2G4M08S1C" H 5750 2550 50  0000 C CNN
+F 2 "IoT_Home:E73-2G4M08S1C" H 5300 3700 50  0001 C CNN
+F 3 "http://www.ebyte.com/en/downpdf.aspx?id=445" H 5300 5000 50  0001 C CNN
+	1    5300 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J1
+U 1 1 5E51628D
+P 7400 4300
+F 0 "J1" H 7450 4617 50  0000 C CNN
+F 1 "Debug" H 7450 4526 50  0000 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_2x03_P1.27mm_Vertical_SMD" H 7400 4300 50  0001 C CNN
+F 3 "~" H 7400 4300 50  0001 C CNN
+	1    7400 4300
+	1    0    0    -1  
+$EndComp
+Text Label 7700 4200 0    50   ~ 0
+SWDCLK
+Text Label 7700 4300 0    50   ~ 0
+SWDIO
+Text Label 7700 4400 0    50   ~ 0
+SWO
+NoConn ~ 7200 4300
+$Comp
+L power:+3.3V #PWR02
+U 1 1 5E51755F
+P 7150 4150
+F 0 "#PWR02" H 7150 4000 50  0001 C CNN
+F 1 "+3.3V" H 7165 4323 50  0000 C CNN
+F 2 "" H 7150 4150 50  0001 C CNN
+F 3 "" H 7150 4150 50  0001 C CNN
+	1    7150 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 4150 7150 4200
+Wire Wire Line
+	7150 4200 7200 4200
+$Comp
+L power:GND #PWR03
+U 1 1 5E518635
+P 7150 4450
+F 0 "#PWR03" H 7150 4200 50  0001 C CNN
+F 1 "GND" H 7155 4277 50  0000 C CNN
+F 2 "" H 7150 4450 50  0001 C CNN
+F 3 "" H 7150 4450 50  0001 C CNN
+	1    7150 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 4450 7150 4400
+Wire Wire Line
+	7150 4400 7200 4400
+Text Label 4500 3700 2    50   ~ 0
+SWDCLK
+Text Label 4500 3600 2    50   ~ 0
+SWDIO
+Text Label 4500 4200 2    50   ~ 0
+SWO
+$Comp
+L power:GND #PWR04
+U 1 1 5E522538
+P 5300 5100
+F 0 "#PWR04" H 5300 4850 50  0001 C CNN
+F 1 "GND" H 5305 4927 50  0000 C CNN
+F 2 "" H 5300 5100 50  0001 C CNN
+F 3 "" H 5300 5100 50  0001 C CNN
+	1    5300 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:USB_C_Receptacle_USB2.0 J2
+U 1 1 5ED6EA2D
+P 3250 2900
+F 0 "J2" H 3357 3767 50  0000 C CNN
+F 1 "USB_C_Receptacle_USB2.0" H 3357 3676 50  0000 C CNN
+F 2 "Connector_USB:USB_C_Receptacle_Palconn_UTC16-G" H 3400 2900 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 3400 2900 50  0001 C CNN
+	1    3250 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 3100 3850 3000
+Wire Wire Line
+	3850 2800 3850 2900
+Wire Wire Line
+	3850 3100 4300 3100
+Wire Wire Line
+	4300 3100 4300 2900
+Wire Wire Line
+	4300 2900 4500 2900
+Connection ~ 3850 3100
+Wire Wire Line
+	3850 2800 4200 2800
+Wire Wire Line
+	4200 2800 4200 3000
+Wire Wire Line
+	4200 3000 4500 3000
+Connection ~ 3850 2800
+Text Label 5100 2000 2    50   ~ 0
+VBUS
+$Comp
+L power:GND #PWR01
+U 1 1 5ED830DD
+P 3250 3800
+F 0 "#PWR01" H 3250 3550 50  0001 C CNN
+F 1 "GND" H 3255 3627 50  0000 C CNN
+F 2 "" H 3250 3800 50  0001 C CNN
+F 3 "" H 3250 3800 50  0001 C CNN
+	1    3250 3800
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2950 3800
+Text Label 5200 2500 1    50   ~ 0
+VDD
+Text Label 5300 2500 1    50   ~ 0
+VDDH
+Text Label 5400 2500 1    50   ~ 0
+DCCH
+Wire Wire Line
+	4800 2000 5100 2000
+$Comp
+L Device:R R1
+U 1 1 5ED9B950
+P 4150 2350
+F 0 "R1" H 4220 2396 50  0000 L CNN
+F 1 "5.1k" H 4220 2305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4080 2350 50  0001 C CNN
+F 3 "~" H 4150 2350 50  0001 C CNN
+	1    4150 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5ED9C779
+P 4450 2350
+F 0 "R2" H 4520 2396 50  0000 L CNN
+F 1 "5.1k" H 4520 2305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4380 2350 50  0001 C CNN
+F 3 "~" H 4450 2350 50  0001 C CNN
+	1    4450 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 2150 4450 2200
+$Comp
+L power:GND #PWR05
+U 1 1 5ED9DB7D
+P 4150 2500
+F 0 "#PWR05" H 4150 2250 50  0001 C CNN
+F 1 "GND" H 4155 2327 50  0000 C CNN
+F 2 "" H 4150 2500 50  0001 C CNN
+F 3 "" H 4150 2500 50  0001 C CNN
+	1    4150 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 5ED9DE2E
+P 4450 2500
+F 0 "#PWR06" H 4450 2250 50  0001 C CNN
+F 1 "GND" H 4455 2327 50  0000 C CNN
+F 2 "" H 4450 2500 50  0001 C CNN
+F 3 "" H 4450 2500 50  0001 C CNN
+	1    4450 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 2000 5100 2500
+$Comp
+L Device:Jumper JP1
+U 1 1 5ED9687A
+P 4500 2000
+F 0 "JP1" H 4500 2264 50  0000 C CNN
+F 1 "Jumper" H 4500 2173 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4500 2000 50  0001 C CNN
+F 3 "~" H 4500 2000 50  0001 C CNN
+	1    4500 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 2000 4200 2000
+Wire Wire Line
+	3900 2300 3900 2000
+Wire Wire Line
+	3850 2300 3900 2300
+Wire Wire Line
+	4000 2600 4000 2200
+Wire Wire Line
+	4000 2200 4150 2200
+Wire Wire Line
+	3850 2600 4000 2600
+Wire Wire Line
+	3850 2500 3950 2500
+Wire Wire Line
+	3950 2500 3950 2150
+Wire Wire Line
+	3950 2150 4450 2150
+NoConn ~ 3850 3400
+NoConn ~ 3850 3500
+NoConn ~ 6100 4000
+$Comp
+L Connector:Conn_01x18_Male J?
+U 1 1 5EDD2C4F
+P 7000 2650
+F 0 "J?" H 7108 3631 50  0000 C CNN
+F 1 "Conn_01x18_Male" H 7108 3540 50  0000 C CNN
+F 2 "" H 7000 2650 50  0001 C CNN
+F 3 "~" H 7000 2650 50  0001 C CNN
+	1    7000 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x18_Male J?
+U 1 1 5EDD70F9
+P 7900 2650
+F 0 "J?" H 8008 3631 50  0000 C CNN
+F 1 "Conn_01x18_Male" H 8008 3540 50  0000 C CNN
+F 2 "" H 7900 2650 50  0001 C CNN
+F 3 "~" H 7900 2650 50  0001 C CNN
+	1    7900 2650
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

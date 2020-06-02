@@ -5,16 +5,19 @@ Add one of this in front of the title
 ![status](https://img.shields.io/badge/-stopped-lightgrey)
 -->
 
-# Device Template ![status](https://img.shields.io/badge/-stopped-lightgrey)
+# Dev Board ![status](https://img.shields.io/badge/-in%20progress-red)
 
 <!--
 Describe briefly but descritively the device
 -->
+Dev boards 
 
 ![PCB Preview not available](hardware/device-template.png)
 
 ## Features
-### Functional
+
+- Breadboard friendly
+- Small form factor
 
 <!--
 Features that anyone would understand
@@ -23,10 +26,8 @@ A good example: Makes sandiwiches for free!
 A bad example: SSR for quiet/durable operation
 -->
 
-### Technical
-
 <!--
-Mention architectural features, be as technical as you can but briefly
+Separatly mention architectural features, be as technical as you can but briefly
 mention SSRs, operating frequency, etc
 -->
 
