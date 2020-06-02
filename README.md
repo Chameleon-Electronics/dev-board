@@ -5,19 +5,20 @@ Add one of this in front of the title
 ![status](https://img.shields.io/badge/-stopped-lightgrey)
 -->
 
-# Dev Board ![status](https://img.shields.io/badge/-in%20progress-red)
+# Dev Board ![status](https://img.shields.io/badge/-done-green)
 
 <!--
 Describe briefly but descritively the device
 -->
 Dev boards 
 
-![PCB Preview not available](hardware/device-template.png)
+![PCB Preview not available](hardware/dev-board.png)
 
 ## Features
 
 - Breadboard friendly
-- Small form factor
+- USB connection
+- SWD Debug adapter
 
 <!--
 Features that anyone would understand
@@ -33,11 +34,8 @@ mention SSRs, operating frequency, etc
 
 <!--- DON'T CHANGE BELLOW THIS LINE -->
 
-## Not working?
-Please file an issue with all the details you can provide and we will fix it for you.
-
-## Contributing
-You are free to reach out and report issues, fix bugs and suggest new features as well as submit pull-requests.
+## Not working? Have an improvement idea?
+Open an issue or if you're feeling excited submit a pull request! We are always looking for new features and improvements.
 
 ## License
 You can use this at your will provided that you mention us properly by including a link to this page.

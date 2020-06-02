@@ -118,8 +118,6 @@ Wire Wire Line
 Wire Wire Line
 	4200 3000 4500 3000
 Connection ~ 3850 2800
-Text Label 5100 2000 2    50   ~ 0
-VBUS
 $Comp
 L power:GND #PWR01
 U 1 1 5ED830DD
@@ -132,14 +130,8 @@ F 3 "" H 3250 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 2950 3800
-Text Label 5200 2500 1    50   ~ 0
-VDD
-Text Label 5300 2500 1    50   ~ 0
-VDDH
 Text Label 5400 2500 1    50   ~ 0
 DCCH
-Wire Wire Line
-	4800 2000 5100 2000
 $Comp
 L Device:R R1
 U 1 1 5ED9B950
@@ -187,22 +179,9 @@ F 3 "" H 4450 2500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5100 2000 5100 2500
-$Comp
-L Device:Jumper JP1
-U 1 1 5ED9687A
-P 4500 2000
-F 0 "JP1" H 4500 2264 50  0000 C CNN
-F 1 "Jumper" H 4500 2173 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4500 2000 50  0001 C CNN
-F 3 "~" H 4500 2000 50  0001 C CNN
-	1    4500 2000
-	1    0    0    -1  
-$EndComp
+	5100 2100 5100 2500
 Wire Wire Line
-	3900 2000 4200 2000
-Wire Wire Line
-	3900 2300 3900 2000
+	3900 2300 3900 2100
 Wire Wire Line
 	3850 2300 3900 2300
 Wire Wire Line
@@ -219,27 +198,204 @@ Wire Wire Line
 	3950 2150 4450 2150
 NoConn ~ 3850 3400
 NoConn ~ 3850 3500
-NoConn ~ 6100 4000
 $Comp
-L Connector:Conn_01x18_Male J?
+L Connector:Conn_01x18_Male J3
 U 1 1 5EDD2C4F
 P 7000 2650
-F 0 "J?" H 7108 3631 50  0000 C CNN
+F 0 "J3" H 7108 3631 50  0000 C CNN
 F 1 "Conn_01x18_Male" H 7108 3540 50  0000 C CNN
-F 2 "" H 7000 2650 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x18_P2.54mm_Vertical" H 7000 2650 50  0001 C CNN
 F 3 "~" H 7000 2650 50  0001 C CNN
 	1    7000 2650
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x18_Male J?
+L Connector:Conn_01x18_Male J4
 U 1 1 5EDD70F9
 P 7900 2650
-F 0 "J?" H 8008 3631 50  0000 C CNN
+F 0 "J4" H 8008 3631 50  0000 C CNN
 F 1 "Conn_01x18_Male" H 8008 3540 50  0000 C CNN
-F 2 "" H 7900 2650 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x18_P2.54mm_Vertical" H 7900 2650 50  0001 C CNN
 F 3 "~" H 7900 2650 50  0001 C CNN
 	1    7900 2650
 	1    0    0    -1  
 $EndComp
+Text Label 8100 1850 0    50   ~ 0
+P1.11
+Text Label 4500 4700 2    50   ~ 0
+P1.10
+Text Label 4500 4800 2    50   ~ 0
+P1.11
+Text Label 8100 1950 0    50   ~ 0
+P1.10
+Text Label 6100 3000 0    50   ~ 0
+P0.03
+Text Label 8100 2050 0    50   ~ 0
+P0.03
+Text Label 6100 4600 0    50   ~ 0
+P0.28
+Text Label 8100 2150 0    50   ~ 0
+P0.28
+Text Label 4500 4900 2    50   ~ 0
+P1.13
+Text Label 8100 2250 0    50   ~ 0
+P1.13
+Text Label 6100 2900 0    50   ~ 0
+P0.02
+Text Label 8100 2350 0    50   ~ 0
+P0.02
+Text Label 6100 4700 0    50   ~ 0
+P0.29
+Text Label 8100 2450 0    50   ~ 0
+P0.29
+Text Label 6100 4900 0    50   ~ 0
+P0.31
+Text Label 8100 2550 0    50   ~ 0
+P0.31
+Text Label 6100 4800 0    50   ~ 0
+P0.30
+Text Label 8100 2650 0    50   ~ 0
+P0.30
+Text Label 6100 2700 0    50   ~ 0
+P0.00
+Text Label 8100 2750 0    50   ~ 0
+P0.00
+Text Label 6100 4500 0    50   ~ 0
+P0.26
+Text Label 6100 2800 0    50   ~ 0
+P0.11
+Text Label 8100 2850 0    50   ~ 0
+P0.11
+Text Label 6100 3200 0    50   ~ 0
+P0.05
+Text Label 8100 2950 0    50   ~ 0
+P0.05
+Text Label 4500 4600 2    50   ~ 0
+P1.09
+Text Label 8100 3050 0    50   ~ 0
+P1.09
+Text Label 8100 3150 0    50   ~ 0
+P0.26
+Text Label 6100 3300 0    50   ~ 0
+P0.06
+Text Label 8100 3250 0    50   ~ 0
+P0.06
+Text Label 6100 3500 0    50   ~ 0
+P0.08
+Text Label 8100 3350 0    50   ~ 0
+P0.08
+Text Label 6100 3100 0    50   ~ 0
+P0.04
+Text Label 8100 3450 0    50   ~ 0
+P0.04
+$Comp
+L power:+3.3V #PWR0101
+U 1 1 5EE4B738
+P 5200 2450
+F 0 "#PWR0101" H 5200 2300 50  0001 C CNN
+F 1 "+3.3V" H 5215 2623 50  0000 C CNN
+F 2 "" H 5200 2450 50  0001 C CNN
+F 3 "" H 5200 2450 50  0001 C CNN
+	1    5200 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 2450 5200 2500
+Wire Wire Line
+	5200 2500 5300 2500
+Connection ~ 5200 2500
+Wire Wire Line
+	3900 2100 5100 2100
+$Comp
+L power:GND #PWR0102
+U 1 1 5EE63A5F
+P 7200 3550
+F 0 "#PWR0102" H 7200 3300 50  0001 C CNN
+F 1 "GND" H 7205 3377 50  0000 C CNN
+F 2 "" H 7200 3550 50  0001 C CNN
+F 3 "" H 7200 3550 50  0001 C CNN
+	1    7200 3550
+	1    0    0    -1  
+$EndComp
+Text Label 6100 3800 0    50   ~ 0
+P0.12
+Text Label 8100 3550 0    50   ~ 0
+P0.12
+$Comp
+L power:+3.3V #PWR0103
+U 1 1 5EE67FA8
+P 7550 3450
+F 0 "#PWR0103" H 7550 3300 50  0001 C CNN
+F 1 "+3.3V" H 7565 3623 50  0000 C CNN
+F 2 "" H 7550 3450 50  0001 C CNN
+F 3 "" H 7550 3450 50  0001 C CNN
+	1    7550 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 3450 7200 3450
+Text Label 6100 3700 0    50   ~ 0
+P0.10
+Text Label 7200 1850 0    50   ~ 0
+P0.10
+Text Label 6100 3600 0    50   ~ 0
+P0.09
+Text Label 7200 1950 0    50   ~ 0
+P0.09
+Text Label 7200 2050 0    50   ~ 0
+SWDCLK
+Text Label 7200 2150 0    50   ~ 0
+SWDIO
+Text Label 6100 4400 0    50   ~ 0
+P0.24
+Text Label 7200 2250 0    50   ~ 0
+P0.24
+Text Label 6100 3900 0    50   ~ 0
+P0.13
+Text Label 7200 2350 0    50   ~ 0
+P0.13
+Text Label 3950 3100 0    50   ~ 0
+D+
+Text Label 3950 2800 0    50   ~ 0
+D-
+Text Label 4900 2100 0    50   ~ 0
+VBUS
+Text Label 4500 3800 2    50   ~ 0
+P0.18
+Text Label 7200 2450 0    50   ~ 0
+P0.18
+Text Label 7200 2550 0    50   ~ 0
+P1.06
+Text Label 7200 2650 0    50   ~ 0
+P1.04
+Text Label 4500 4500 2    50   ~ 0
+P1.06
+Text Label 4500 4400 2    50   ~ 0
+P1.04
+Text Label 4500 4300 2    50   ~ 0
+P1.02
+Text Label 7200 2750 0    50   ~ 0
+P1.02
+Text Label 6100 4300 0    50   ~ 0
+P0.22
+Text Label 7200 2950 0    50   ~ 0
+P0.22
+Text Label 6100 4200 0    50   ~ 0
+P0.20
+Text Label 7200 3050 0    50   ~ 0
+P0.20
+Text Label 6100 4100 0    50   ~ 0
+P0.17
+Text Label 7200 3150 0    50   ~ 0
+P0.17
+Text Label 6100 4000 0    50   ~ 0
+P0.15
+Text Label 7200 3250 0    50   ~ 0
+P0.15
+Text Label 6100 3400 0    50   ~ 0
+P0.07
+Text Label 7200 3350 0    50   ~ 0
+P0.07
+Text Label 7200 2850 0    50   ~ 0
+SWO
 $EndSCHEMATC
