@@ -10,7 +10,7 @@ Add one of this in front of the title
 <!--
 Describe briefly but descritively the device
 -->
-Dev boards 
+The board we use to prototype our ideas, this is where it all starts.
 
 ![PCB Preview not available](hardware/dev-board.png)
 
