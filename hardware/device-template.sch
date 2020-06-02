@@ -1,0 +1,147 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Device template"
+Date "2020-02-22"
+Rev "1.0.3"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L IoT_Home:E73-2G4M08S1C U1
+U 1 1 5E514202
+P 5300 3800
+F 0 "U1" H 5500 2450 50  0000 C CNN
+F 1 "E73-2G4M08S1C" H 5750 2550 50  0000 C CNN
+F 2 "IoT_Home:E73-2G4M08S1C" H 5300 3700 50  0001 C CNN
+F 3 "http://www.ebyte.com/en/downpdf.aspx?id=445" H 5300 5000 50  0001 C CNN
+	1    5300 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR01
+U 1 1 5E5153A0
+P 5250 2450
+F 0 "#PWR01" H 5250 2300 50  0001 C CNN
+F 1 "+3.3V" H 5265 2623 50  0000 C CNN
+F 2 "" H 5250 2450 50  0001 C CNN
+F 3 "" H 5250 2450 50  0001 C CNN
+	1    5250 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J1
+U 1 1 5E51628D
+P 7400 4300
+F 0 "J1" H 7450 4617 50  0000 C CNN
+F 1 "Debug" H 7450 4526 50  0000 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_2x03_P1.27mm_Vertical_SMD" H 7400 4300 50  0001 C CNN
+F 3 "~" H 7400 4300 50  0001 C CNN
+	1    7400 4300
+	1    0    0    -1  
+$EndComp
+Text Label 7700 4200 0    50   ~ 0
+SWDCLK
+Text Label 7700 4300 0    50   ~ 0
+SWDIO
+Text Label 7700 4400 0    50   ~ 0
+SWO
+NoConn ~ 7200 4300
+$Comp
+L power:+3.3V #PWR02
+U 1 1 5E51755F
+P 7150 4150
+F 0 "#PWR02" H 7150 4000 50  0001 C CNN
+F 1 "+3.3V" H 7165 4323 50  0000 C CNN
+F 2 "" H 7150 4150 50  0001 C CNN
+F 3 "" H 7150 4150 50  0001 C CNN
+	1    7150 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 4150 7150 4200
+Wire Wire Line
+	7150 4200 7200 4200
+$Comp
+L power:GND #PWR03
+U 1 1 5E518635
+P 7150 4450
+F 0 "#PWR03" H 7150 4200 50  0001 C CNN
+F 1 "GND" H 7155 4277 50  0000 C CNN
+F 2 "" H 7150 4450 50  0001 C CNN
+F 3 "" H 7150 4450 50  0001 C CNN
+	1    7150 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 4450 7150 4400
+Wire Wire Line
+	7150 4400 7200 4400
+Text Label 4500 3700 2    50   ~ 0
+SWDCLK
+Text Label 4500 3600 2    50   ~ 0
+SWDIO
+Text Label 4500 4200 2    50   ~ 0
+SWO
+NoConn ~ 4500 3000
+NoConn ~ 4500 2900
+NoConn ~ 4500 4300
+NoConn ~ 4500 4400
+NoConn ~ 4500 4500
+NoConn ~ 4500 4600
+NoConn ~ 4500 4700
+NoConn ~ 4500 4800
+NoConn ~ 4500 4900
+NoConn ~ 6100 4900
+NoConn ~ 6100 4800
+NoConn ~ 6100 4700
+NoConn ~ 6100 4600
+NoConn ~ 6100 4500
+NoConn ~ 6100 4400
+NoConn ~ 6100 4300
+NoConn ~ 6100 4200
+NoConn ~ 6100 4100
+NoConn ~ 6100 4000
+NoConn ~ 6100 3900
+NoConn ~ 6100 3800
+NoConn ~ 6100 3700
+NoConn ~ 6100 3600
+NoConn ~ 6100 3500
+NoConn ~ 6100 3400
+NoConn ~ 6100 3300
+NoConn ~ 6100 3200
+NoConn ~ 6100 3100
+NoConn ~ 6100 3000
+NoConn ~ 6100 2900
+NoConn ~ 6100 2800
+NoConn ~ 6100 2700
+NoConn ~ 5400 2500
+NoConn ~ 5100 2500
+Wire Wire Line
+	5250 2450 5200 2450
+Wire Wire Line
+	5200 2450 5200 2500
+Wire Wire Line
+	5250 2450 5300 2450
+Wire Wire Line
+	5300 2450 5300 2500
+Connection ~ 5250 2450
+$Comp
+L power:GND #PWR04
+U 1 1 5E522538
+P 5300 5100
+F 0 "#PWR04" H 5300 4850 50  0001 C CNN
+F 1 "GND" H 5305 4927 50  0000 C CNN
+F 2 "" H 5300 5100 50  0001 C CNN
+F 3 "" H 5300 5100 50  0001 C CNN
+	1    5300 5100
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4500 3800
+$EndSCHEMATC
