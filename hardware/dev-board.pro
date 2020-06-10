@@ -1,4 +1,4 @@
-update=ter 02 jun 2020 20:48:01
+update=qua 10 jun 2020 14:10:43
 version=1
 last_client=kicad
 [general]
@@ -26,11 +26,11 @@ ERC_TestSimilarLabels=1
 version=1
 PageLayoutDescrFile=../kicad-library/IoT_Home.kicad_wks
 LastNetListRead=
-CopperLayerCount=2
+CopperLayerCount=4
 BoardThickness=1.6
 AllowMicroVias=0
 AllowBlindVias=0
-RequireCourtyardDefinitions=0
+RequireCourtyardDefinitions=1
 ProhibitOverlappingCourtyards=1
 MinTrackWidth=0.127
 MinViaDiameter=0.45
@@ -42,7 +42,7 @@ TrackWidth1=0.127
 ViaDiameter1=0.45
 ViaDrill1=0.2
 dPairWidth1=0.2
-dPairGap1=0.25
+dPairGap1=0.2032
 dPairViaGap1=0.25
 SilkLineWidth=0.12
 SilkTextSizeV=1
@@ -74,12 +74,12 @@ Type=0
 Enabled=1
 [pcbnew/Layer.In1.Cu]
 Name=In1.Cu
-Type=0
-Enabled=0
+Type=1
+Enabled=1
 [pcbnew/Layer.In2.Cu]
 Name=In2.Cu
 Type=0
-Enabled=0
+Enabled=1
 [pcbnew/Layer.In3.Cu]
 Name=In3.Cu
 Type=0
@@ -244,5 +244,16 @@ ViaDrill=0.2
 uViaDiameter=0.3
 uViaDrill=0.1
 dPairWidth=0.2
-dPairGap=0.25
+dPairGap=0.2032
+dPairViaGap=0.25
+[pcbnew/Netclasses/1]
+Name=USB
+Clearance=0.127
+TrackWidth=0.261112
+ViaDiameter=0.45
+ViaDrill=0.2
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.261112
+dPairGap=0.2032
 dPairViaGap=0.25

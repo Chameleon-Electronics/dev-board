@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Dev board"
-Date "2020-06-02"
-Rev "1.0.0"
+Date "2020-06-10"
+Rev "1.3.0"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -24,54 +24,34 @@ F 3 "http://www.ebyte.com/en/downpdf.aspx?id=445" H 5300 5000 50  0001 C CNN
 	1    5300 3800
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector_Generic:Conn_02x03_Odd_Even J1
-U 1 1 5E51628D
-P 7400 4300
-F 0 "J1" H 7450 4617 50  0000 C CNN
-F 1 "Debug" H 7450 4526 50  0000 C CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_2x03_P1.27mm_Vertical_SMD" H 7400 4300 50  0001 C CNN
-F 3 "~" H 7400 4300 50  0001 C CNN
-	1    7400 4300
-	1    0    0    -1  
-$EndComp
-Text Label 7700 4200 0    50   ~ 0
+Text Label 8050 4400 0    50   ~ 0
 SWDCLK
-Text Label 7700 4300 0    50   ~ 0
+Text Label 8050 4500 0    50   ~ 0
 SWDIO
-Text Label 7700 4400 0    50   ~ 0
+Text Label 8050 4600 0    50   ~ 0
 SWO
-NoConn ~ 7200 4300
 $Comp
 L power:+3.3V #PWR02
 U 1 1 5E51755F
-P 7150 4150
-F 0 "#PWR02" H 7150 4000 50  0001 C CNN
-F 1 "+3.3V" H 7165 4323 50  0000 C CNN
-F 2 "" H 7150 4150 50  0001 C CNN
-F 3 "" H 7150 4150 50  0001 C CNN
-	1    7150 4150
+P 7550 4200
+F 0 "#PWR02" H 7550 4050 50  0001 C CNN
+F 1 "+3.3V" H 7565 4373 50  0000 C CNN
+F 2 "" H 7550 4200 50  0001 C CNN
+F 3 "" H 7550 4200 50  0001 C CNN
+	1    7550 4200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7150 4150 7150 4200
-Wire Wire Line
-	7150 4200 7200 4200
 $Comp
 L power:GND #PWR03
 U 1 1 5E518635
-P 7150 4450
-F 0 "#PWR03" H 7150 4200 50  0001 C CNN
-F 1 "GND" H 7155 4277 50  0000 C CNN
-F 2 "" H 7150 4450 50  0001 C CNN
-F 3 "" H 7150 4450 50  0001 C CNN
-	1    7150 4450
+P 7550 4800
+F 0 "#PWR03" H 7550 4550 50  0001 C CNN
+F 1 "GND" H 7555 4627 50  0000 C CNN
+F 2 "" H 7550 4800 50  0001 C CNN
+F 3 "" H 7550 4800 50  0001 C CNN
+	1    7550 4800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7150 4450 7150 4400
-Wire Wire Line
-	7150 4400 7200 4400
 Text Label 4500 3700 2    50   ~ 0
 SWDCLK
 Text Label 4500 3600 2    50   ~ 0
@@ -398,4 +378,16 @@ Text Label 7200 3350 0    50   ~ 0
 P0.07
 Text Label 7200 2850 0    50   ~ 0
 SWO
+NoConn ~ 7050 4500
+$Comp
+L IoT_Home:Conn_Chameleon_SWD J1
+U 1 1 5EE0EEC8
+P 7550 4500
+F 0 "J1" H 7700 4250 50  0000 C CNN
+F 1 "Conn_Chameleon_SWD" H 8050 4150 50  0000 C CNN
+F 2 "IoT_Home:Chameleon_SWD_Header" H 7550 4200 50  0001 C CNN
+F 3 "https://github.com/Chameleon-Electronics/programmer-adapter" V 7200 3250 50  0001 C CNN
+	1    7550 4500
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
